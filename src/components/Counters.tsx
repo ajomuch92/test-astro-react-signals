@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { signal } from "@preact/signals-react";
+import { useSignal } from "@preact/signals-react";
 
 export default function Counters() {
     const [counter1, setCounter1] = useState(0);
-    const counter2 = signal(0)
+    const counter2 = useSignal(0);
 
     return (
         <div>
